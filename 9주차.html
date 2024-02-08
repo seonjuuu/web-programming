@@ -1,0 +1,91 @@
+<!-- 실습1
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 만들기</title>
+    <style>
+        h3,li{color: brown;}
+        .main{background: aliceblue;}
+        .warning{color:red}
+        #list{background: mistyrose;}  /*li태그로 쓰면 글자부분의 배경색만 바뀜, #list로 적어줘야 전체의 배경색이*/
+    </style>
+</head>
+<body>
+    <body class="main">
+        <h3 >Web Programming</h3>
+        <hr>
+        <div> 
+            <div>1학기 <strong>학습 내용</strong></div>
+            <ul id="list">
+                <li>HTML5</li>
+                <li><strong>CSS3</strong></li>
+                <li>JAVASCRIPT</li>
+            </ul>
+            <div class="warning">60점 이하는 F!</div>
+        </div>
+    </body>
+</html>
+-->
+<!-- 실습2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type]{
+            background-color: blueviolet;
+            color: white;
+        } /*디자인을 둘 다 똑같이하므로 그냥 속성만 적어서 나타날 수 있음*/
+        /*input[type="text"]{background-color: blueviolet; color: white;}
+        input[type="password"]{background-color: blueviolet; color: white;}*/
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+        아이디 <input type="text" name="id"> <br>
+        패스워드 <input type="password" name="password">
+    </fieldset>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 만들기</title>
+    <style>
+        h3,li{color: brown;}
+        .main{background: aliceblue;}
+        .warning{color:red}
+        #list{background: mistyrose;}
+        div>div>strong {background-color: yellow;}  /*div>strong{background-color: yellow;}*/
+        #list>li>strong {color: aqua;}  /*#list strong{color: aqua;}*/
+        
+    </style>
+</head>
+<body class="main">
+    <h3 >Web Programming</h3>
+    <hr>
+    <div> 
+        <div>1학기 <strong>학습 내용</strong></div>
+        <ul id="list">
+            <li>HTML5</li>
+            <li><strong>CSS3</strong></li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <div class="warning">60점 이하는 F!</div>
+    </div>
+</body>
+</html>
+-->

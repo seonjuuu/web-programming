@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS 실습</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}/*전제를 여백을 없도록 설정*/
+
+		/* 실습 시작 */
+        body{background-color: rgb(243,243,243);}
+        header{background-color: black;color: white;}
+        article{background-color: white;}
+        aside{background-color: white;}
+
+        header,article,aside,footer{border: 1px solid #999999;} /*border에 쉼표쓰면 X !! */
+		
+		body{
+            width: 960px;
+            margin: 0 auto; /*0 : 위,아래(여백X) , auto : 왼,오른쪽*/
+        }
+		section{
+            margin: 20px 0;
+            overflow: hidden; /*위치변경*/
+        }
+        header{
+            padding-top: 20px;
+            border-radius: 15px;            
+        }
+        article
+		{
+			padding: 20px; 
+			border-radius: 15px; 
+			width: 640px; 
+			float: left; /*위치변경*/
+        }
+        aside
+		{
+            float: right; /*위치변경*/
+			width: 220px;
+            padding:20px;
+            border-radius: 15px;                        
+        }
+
+        
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Fourth Coffee</h1>
+		<p>Bringing the world to your cup</p>
+		<ul id="nav">
+			<li><a href="11week-start.html">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Links</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<h2>Now in stock at Fourth Coffee!</h2>
+
+		<article>
+			<h3><a href="#">Classic Blend</a></h3>
+			<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, justo at placerat rhoncus, odio augue malesuada mauris, ac consectetur ligula erat id metus. Mauris volutpat, lacus in feugiat aliquet, augue tortor accumsan lacus, eu placerat
+				eros mauris eget diam. Integer risus nisi, aliquet eget mollis ut, auctor ut enim. Suspendisse venenatis arcu vitae velit pulvinar condimentum. Sed est eros, pharetra eu semper ac, dapibus id dui.</p>
+			<p class="product_info">Item #7849 | $49.99 </p>
+			<br />
+			<h3><a href="#">Guatemalan Blend</a></h3>
+			<p >Donec luctus bibendum arcu, ac interdum lacus sodales sit amet. Nullam interdum, lorem ut luctus ultrices, nisi turpis porttitor est, id pulvinar dui mauris nec sem. Vestibulum nec elit orci, quis imperdiet odio. Curabitur malesuada, quam sit amet
+				pharetra suscipit, turpis risus lacinia leo, in iaculis purus dui in velit. Vivamus luctus libero eget metus imperdiet consequat. Mauris sem ipsum, faucibus ut egestas id, eleifend a quam.</p>
+			<p class="product_info">Item #9753 | $44.99 </p>
+		</article>
+
+		<aside>
+			<h3>Welcome to Fourth!</h3>
+			<p>Praesent sagittis mattis sem et dignissim. Nullam hendrerit facilisis est, nec venenatis sem mollis sit amet. Nullam id quam risus, et sagittis mauris. Cras hendrerit neque eget purus gravida ac rutrum dolor tristique. Praesent a quam ligula. Praesent
+				sed augue nisl. Curabitur hendrerit, velit nec ullamcorper bibendum, turpis orci congue sem, eget sagittis erat nunc eu dui.</p>
+			<hr/>
+		</aside>
+
+	</section>
+
+	<footer>
+		<p>
+			&copy; 2023 Sungshin Women's University. All rights reserved. Terms of use.
+		</p>
+	</footer>
+</body>
+</html>

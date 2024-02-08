@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS 실습</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		/* 실습 시작 */
+        body{background-color: rgb(243,243,243);}
+        header{background-color: black; color:white;}
+        article{background-color: white;}
+        aside{background-color: white;}
+        header, article,aside,footer{border:1px solid #999999}
+        body{width:960px; margin:0 auto;}
+        section{margin:20px 0;}
+
+        header{
+            padding-top:20px;
+            border-radius:15px;
+        }
+        article{
+            padding:20px;
+            border-radius:15px;
+            width:640px;
+            float:left;
+        }
+        aside{
+            width:220px;
+            height: 300px;
+            float:right;
+            margin-right:10px;
+            padding:10px;
+            padding-top:20px;
+            border-radius:15px;
+        }
+        section{
+            overflow:hidden;
+        }
+
+        .product_info{
+            background-color:rgba(200,200,200,0.3);
+        }
+        article{
+            background-image:url("coffee.jpg");
+            background-repeat:no-repeat;
+            background-size: 50%;
+            background-position: bottom 50px right 30px;
+
+        }
+        body{
+            font-family:'Helvetica';
+        }
+        article a {
+            text-decoration:none;
+        }
+        article a:hover{
+            color:gray;
+        }
+
+        #popup{
+            width:200px;
+            height:250px;
+            background-color: black;
+            color: white;
+            position:absolute;
+            right: 200px;
+            top:50px;
+            box-shadow: 5px 5px 5px white;
+            padding: 10px;
+        }
+        body{
+            position:relative;
+        }
+        #popup>h2{
+            color:red;
+            text-align:center;
+        }
+
+        header h1{
+            padding-left:10px;
+        }
+        header p{
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+        #nav{
+            padding:10px;
+            background-color:aquamarine;
+            border-radius: 0 0 15px 15px;
+        }
+        #nav li{
+            display:inline;
+            margin:10px;
+            
+        }
+        #nav a{color:white;
+            text-decoration: none;}
+
+            
+        footer{
+            background-color: black;
+            color:white;
+            padding:10px;
+            border-radius:15px;
+        }
+        #quickbar{
+            position:fixed;
+            top:0;
+            right:0;
+            background-color: white;
+            border-radius:0 0 0 15px;
+        }
+
+
+ 
+
+
+        
+
+        
+
+
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Fourth Coffee</h1>
+		<p>Bringing the world to your cup</p>
+		<ul id="nav">
+			<li><a href="11week-start.html">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Links</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<h2>Now in stock at Fourth Coffee!</h2>
+
+		<article>
+			<h3><a href="#">Classic Blend</a></h3>
+			<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, justo at placerat rhoncus, odio augue malesuada mauris, ac consectetur ligula erat id metus. Mauris volutpat, lacus in feugiat aliquet, augue tortor accumsan lacus, eu placerat
+				eros mauris eget diam. Integer risus nisi, aliquet eget mollis ut, auctor ut enim. Suspendisse venenatis arcu vitae velit pulvinar condimentum. Sed est eros, pharetra eu semper ac, dapibus id dui.</p>
+			<p class="product_info">Item #7849 | $49.99 </p>
+			<br />
+			<h3><a href="#">Guatemalan Blend</a></h3>
+			<p >Donec luctus bibendum arcu, ac interdum lacus sodales sit amet. Nullam interdum, lorem ut luctus ultrices, nisi turpis porttitor est, id pulvinar dui mauris nec sem. Vestibulum nec elit orci, quis imperdiet odio. Curabitur malesuada, quam sit amet
+				pharetra suscipit, turpis risus lacinia leo, in iaculis purus dui in velit. Vivamus luctus libero eget metus imperdiet consequat. Mauris sem ipsum, faucibus ut egestas id, eleifend a quam.</p>
+			<p class="product_info">Item #9753 | $44.99 </p>
+		</article>
+
+		<aside>
+			<h3>Welcome to Fourth!</h3>
+			<p>Praesent sagittis mattis sem et dignissim. Nullam hendrerit facilisis est, nec venenatis sem mollis sit amet. Nullam id quam risus, et sagittis mauris. Cras hendrerit neque eget purus gravida ac rutrum dolor tristique. Praesent a quam ligula. Praesent
+				sed augue nisl. Curabitur hendrerit, velit nec ullamcorper bibendum, turpis orci congue sem, eget sagittis erat nunc eu dui.</p>
+			<hr/>
+		</aside>
+
+	</section>
+
+	<footer>
+		<p>
+			&copy; 2023 Sungshin Women's University. All rights reserved. Terms of use.
+		</p>
+	</footer>
+
+    <div id="popup">
+		<h2>FIRE SALE!</h2>
+		<br>
+		<p>
+			Not only are you saving the environment when you use our reusable capules,
+			you're also saving tons of money in the process.
+		</p>
+	</div>
+
+    <div id="quickbar">
+		<p>
+			서울 날씨⛅
+		</p>
+	</div>
+
+</body>
+</html>
